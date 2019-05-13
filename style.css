@@ -1,0 +1,33 @@
+.white {
+  color: white;
+}
+
+.nav-list{
+  text-decoration: none;
+  list-style: none;
+  float: inherit;
+}
+
+a {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  background-size: cover;
+}
+
+.What-is-header{
+  float: inherit;
+  margin: 0
+  padding: 1
+}
+.content-what-is{
+  text-align: center;
+  float: inherit;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
