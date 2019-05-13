@@ -1,21 +1,13 @@
-.white {
-  color: white;
-}
-
 .nav-list{
   text-decoration: none;
   list-style: none;
   float: inherit;
 }
 
-a {
-  color: white;
-}
-
 body {
   margin: 0;
   padding: 0;
-  background-color: #222;
+  background-color: #fff;
   background-size: cover;
 }
 
@@ -30,4 +22,91 @@ body {
   margin: 0;
   padding: 0;
   color: inherit;
+}
+
+.center {text-align: center;}
+.title {text-align: center;font-size:50px;}
+.subtitle{text-align: center;}
+h1 {font-family:"SF-Pro-Text-Bold";}
+p {font-family:"SF-Pro-Text-Light";}
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  font-family: SF-Pro-Text-Regular;
+  font-size: 12px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  COLOR: grey; TEXT-DECORATION: none; font-weight: none
+}
+
+.button1 {
+  border-radius: 15px;
+  background: #4286f4;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  align: center;
+  color: white;
+}
+.btn {
+  cursor: pointer;
+  color: white;
+  background: #4286f4;
+  font-family: 'SF-Pro-Text-Medium';
+  border-radius: 15px;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.46875rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.floating
+{
+    animation: floating 3s ease infinite;
+
+    will-change: transform;
+}
+@keyframes floating
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    50%
+    {
+        transform: translateY(10px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
 }
