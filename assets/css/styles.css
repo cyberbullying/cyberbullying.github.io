@@ -6685,7 +6685,7 @@ button.bg-dark:focus {
 }
 
 .bg-default {
-  background-color: #344675 !important;
+  background-color: #1F2251 !important;
 }
 
 a.bg-default:hover,
@@ -20675,15 +20675,23 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 
 .card-stats {
   margin-bottom: 0;
+  transition: transform .2s;
 }
 
-.card-stats.upper {
+.card-stats:hover {
   box-shadow: 2px 7px 11px rgba(0, 0, 0, 0.4);
   transform: translate(-20px, -25px);
   position: absolute;
   padding: 10px;
   z-index: 2;
   min-width: 260px;
+ transform: scale(1.2);
+ animation: thing 1ms forwards;
+} 
+
+@keyframes thing{ 100% {
+background-color: #344675; 
+}  
 }
 
 .card-stats .card-body .numbers {
@@ -20790,4 +20798,12 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   margin: 0;
 }
 
-/*# sourceMappingURL=kit-free.css.map */
+.light:hover{
+  animation: dating 1ms forwards
+}
+
+@keyframes dating{
+  100% {
+    color: #fff;
+  }
+}
